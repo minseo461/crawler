@@ -1,0 +1,10 @@
+<%= form_tag articles_news_title_path, method:'Post' do %>
+<%= text_field_tag :query %>
+<%= submit_tag '제출' %>
+<% end %>
+
+<br><br>
+
+<% @article.each do |x| %>
+<%= x.title %><br>
+<% end %>
